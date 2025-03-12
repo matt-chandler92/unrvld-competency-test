@@ -13,10 +13,18 @@ button.button__primary {
   background-color: #000;
   color: #fff;
 }
+button.button__primary:hover {
+  border: solid 2px #000;
+  background-color: #fff;
+  color: #000;
+}
 button.button__secondary {
   background-color: #fff;
   color: #000;
-  border: solid 1px #000;
+  border: solid 2px #CCC;
+}
+button.button__secondary:hover {
+  border-color: #000;
 }
 
 /*# sourceMappingURL=button.css.map */

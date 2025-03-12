@@ -12,11 +12,19 @@
         &__primary{
             background-color: colors.$color_black;
             color: colors.$color_white;
+            &:hover {
+                border: solid 2px colors.$color_black;
+                background-color: colors.$color_white;
+                color: colors.$color_black;
+            }
         }
         &__secondary{
             background-color: colors.$color_white;
             color: colors.$color_black;
-            border: solid 1px colors.$color_black;
+            border: solid 2px colors.$color_grey_04;
+            &:hover {
+                border-color: colors.$color_black;
+            }
         }
     }
 }
