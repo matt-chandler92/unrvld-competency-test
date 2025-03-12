@@ -1,0 +1,34 @@
+@use "../utility/colors.scss";
+@use "../utility/spacing.scss";
+@use "../utility/typography.scss";
+
+@mixin button {
+    border-radius: 2rem;
+    padding: spacing.$spacing_01 spacing.$spacing_02;
+    font-family: typography.$typography_proxima-nova-reg;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    &.button {
+        &__primary{
+            background-color: colors.$color_black;
+            color: colors.$color_white;
+            &:hover {
+                border: solid 2px colors.$color_black;
+                background-color: colors.$color_white;
+                color: colors.$color_black;
+            }
+        }
+        &__secondary{
+            background-color: colors.$color_white;
+            color: colors.$color_black;
+            border: solid 2px colors.$color_grey_04;
+            &:hover {
+                border-color: colors.$color_black;
+            }
+        }
+    }
+}
+
+button {
+    @include button;
+}

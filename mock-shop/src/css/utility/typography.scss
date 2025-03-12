@@ -1,0 +1,18 @@
+@font-face {
+    font-family: proxima-nova-reg;
+    src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format('opentype');
+}
+
+$typography_proxima-nova-reg: proxima-nova-reg, arial, sans-serif;
+
+
+// h1 {
+//     font-family: $typography_proxima-nova-reg;
+//     font-weight: 700;
+//     font-size: 4rem;
+// }
+// h2 {
+//     font-family: $typography_proxima-nova-reg;
+//     font-weight: 700;
+//     font-size: 2rem;
+// }
