@@ -11,6 +11,7 @@ button {
 }
 button.button__primary {
   background-color: #000;
+  border: solid 2px #000;
   color: #fff;
 }
 button.button__primary:hover {

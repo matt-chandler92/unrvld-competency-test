@@ -11,6 +11,7 @@
     &.button {
         &__primary{
             background-color: colors.$color_black;
+            border: solid 2px colors.$color_black;
             color: colors.$color_white;
             &:hover {
                 border: solid 2px colors.$color_black;
