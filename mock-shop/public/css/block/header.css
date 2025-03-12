@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__heading--small {
+  font-size: 2.5rem;
+}
+.header__heading--large {
+  font-size: 4rem;
+}
+.header__actions {
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=header.css.map */

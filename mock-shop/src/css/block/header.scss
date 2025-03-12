@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    &__heading {
+        &--small {
+        font-size: 2.5rem;
+        }
+        &--large {
+        font-size: 4rem;
+        }
+    }
+    &__actions {
+        align-self: flex-end;
+    }
+}

@@ -1,4 +1,4 @@
-// @use "/mock-shop/node_modules/bootstrap/scss/bootstrap.scss";
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 //composition
@@ -13,6 +13,7 @@
 
 //blocks
 @use "./block/button.scss";
+@use "./block/header.scss";
 
 //exceptions
 
