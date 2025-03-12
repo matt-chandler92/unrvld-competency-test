@@ -1,0 +1,22 @@
+@font-face {
+  font-family: proxima-nova-reg;
+  src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
+}
+button {
+  border-radius: 2rem;
+  padding: 10px 20px;
+  font-family: proxima-nova-reg, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+button.button__primary {
+  background-color: #000;
+  color: #fff;
+}
+button.button__secondary {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+
+/*# sourceMappingURL=button.css.map */

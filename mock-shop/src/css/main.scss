@@ -1,1 +1,18 @@
-@use "~bootstrap/scss/bootstrap";
+// @use "/mock-shop/node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//composition
+
+
+//utilites
+@use "./utility/colors.scss";
+@use "./utility/spacing.scss";
+@use "./utility/typography.scss";
+@use "./composition/reset.scss";
+
+
+//blocks
+@use "./block/button.scss";
+
+//exceptions
+
