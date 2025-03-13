@@ -1,4 +1,73 @@
 @charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: proxima-nova-reg;
+  src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
+}
+h1 {
+  font-family: proxima-nova-reg, arial, sans-serif;
+  font-weight: 700;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: proxima-nova-reg, arial, sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11844,75 +11913,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@font-face {
-  font-family: proxima-nova-reg;
-  src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
-}
-h1 {
-  font-family: proxima-nova-reg, arial, sans-serif;
-  font-weight: 700;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 16px;
-  font-family: proxima-nova-reg, arial, sans-serif;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 button, a {
   border-radius: 2rem;
   padding: 10px 20px;
@@ -12016,6 +12016,37 @@ button.button__secondary:hover, a.button__secondary:hover {
   opacity: 0;
   position: absolute;
   z-index: -1;
+}
+
+.carousel-card {
+  border-radius: 1rem;
+  background: linear-gradient(#EFEFEF, #EFEFEF);
+  overflow: hidden;
+  width: 280px;
+  height: 390px;
+  background-size: cover;
+  padding: 2rem;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.carousel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px 1px #CCC;
+}
+.carousel-card__header {
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-weight: 700;
+}
+.carousel-card__sub {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
+@media screen and (min-width: 768px) {
+  .carousel-card {
+    width: 346px;
+    height: 460px;
+    padding: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
