@@ -1,0 +1,25 @@
+@use "../block/button.scss";
+@use "../utility/colors.scss";
+
+.filters{
+    display: flex;
+    gap: 1rem;
+
+    legend {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    label{
+    @include button.button;
+    &:has(input:checked) {
+        border-color: colors.$color_black;
+    }
+    input { 
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    }
+}

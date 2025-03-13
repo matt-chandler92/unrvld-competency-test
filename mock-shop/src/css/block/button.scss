@@ -9,6 +9,11 @@
     text-transform: uppercase;
     font-size: 0.875rem;
     text-decoration: none;
+    cursor: pointer;
+    &:focus-within {
+        outline: solid 2px colors.$color_grey_04;
+        outline-offset: 2px;
+    }
     &.button {
         &__primary{
             background-color: colors.$color_black;
