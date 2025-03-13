@@ -1,0 +1,11 @@
+#storybook-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.docblock-argstable * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=storybook.css.map */

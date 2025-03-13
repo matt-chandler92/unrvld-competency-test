@@ -2,7 +2,7 @@
   font-family: proxima-nova-reg;
   src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
 }
-button, a {
+
   border-radius: 2rem;
   padding: 10px 20px;
   font-family: proxima-nova-reg, arial, sans-serif;

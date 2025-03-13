@@ -1,0 +1,24 @@
+.header {
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.header__heading {
+  text-transform: uppercase;
+}
+.header__heading--small {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+.header__heading--large {
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+.header__actions {
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=header.css.map */

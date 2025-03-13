@@ -1,0 +1,92 @@
+@font-face {
+  font-family: proxima-nova-reg;
+  src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
+}
+h1 {
+  font-family: proxima-nova-reg, arial, sans-serif;
+  font-weight: 700;
+}
+
+button, a {
+  border-radius: 2rem;
+  padding: 10px 20px;
+  font-family: proxima-nova-reg, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+button:focus-within, a:focus-within {
+  outline: solid 2px #CCC;
+  outline-offset: 2px;
+}
+button.button__primary, a.button__primary {
+  background-color: #000;
+  border: solid 2px #000;
+  color: #fff;
+}
+button.button__primary:hover, a.button__primary:hover {
+  border: solid 2px #000;
+  background-color: #fff;
+  color: #000;
+}
+button.button__secondary, a.button__secondary {
+  background-color: #fff;
+  color: #000;
+  border: solid 2px #CCC;
+}
+button.button__secondary:hover, a.button__secondary:hover {
+  border-color: #000;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.filters legend {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.filters label {
+  border-radius: 2rem;
+  padding: 10px 20px;
+  font-family: proxima-nova-reg, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.filters label:focus-within {
+  outline: solid 2px #CCC;
+  outline-offset: 2px;
+}
+.filters label.button__primary {
+  background-color: #000;
+  border: solid 2px #000;
+  color: #fff;
+}
+.filters label.button__primary:hover {
+  border: solid 2px #000;
+  background-color: #fff;
+  color: #000;
+}
+.filters label.button__secondary {
+  background-color: #fff;
+  color: #000;
+  border: solid 2px #CCC;
+}
+.filters label.button__secondary:hover {
+  border-color: #000;
+}
+.filters label:has(input:checked) {
+  border-color: #000;
+}
+.filters label input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=filters.css.map */
