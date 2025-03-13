@@ -2,34 +2,30 @@
   font-family: proxima-nova-reg;
   src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format("opentype");
 }
-h1 {
-  font-family: proxima-nova-reg, arial, sans-serif;
-  font-weight: 700;
-}
 
-button {
   border-radius: 2rem;
   padding: 10px 20px;
   font-family: proxima-nova-reg, arial, sans-serif;
   text-transform: uppercase;
   font-size: 0.875rem;
+  text-decoration: none;
 }
-button.button__primary {
+button.button__primary, a.button__primary {
   background-color: #000;
   border: solid 2px #000;
   color: #fff;
 }
-button.button__primary:hover {
+button.button__primary:hover, a.button__primary:hover {
   border: solid 2px #000;
   background-color: #fff;
   color: #000;
 }
-button.button__secondary {
+button.button__secondary, a.button__secondary {
   background-color: #fff;
   color: #000;
   border: solid 2px #CCC;
 }
-button.button__secondary:hover {
+button.button__secondary:hover, a.button__secondary:hover {
   border-color: #000;
 }
 
