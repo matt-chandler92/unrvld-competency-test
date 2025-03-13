@@ -8,6 +8,7 @@
     font-family: typography.$typography_proxima-nova-reg;
     text-transform: uppercase;
     font-size: 0.875rem;
+    text-decoration: none;
     &.button {
         &__primary{
             background-color: colors.$color_black;
@@ -30,6 +31,6 @@
     }
 }
 
-button {
+button, a {
     @include button;
 }
