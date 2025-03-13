@@ -1,6 +1,6 @@
 export interface ButtonProps {
-    type: 'primary' | 'secondary';
-    label?: string;
+    type?: 'primary' | 'secondary';
+    label: string;
     href?: string;
     active?: boolean;
     onClick?: () => void;

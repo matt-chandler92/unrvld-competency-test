@@ -1,12 +1,19 @@
+
+@use "../utility/breakpoints.scss";
 .header{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 1rem;
+    @media screen and (min-width: breakpoints.$md) {
+        display: flex;
+        justify-content: space-between;
+    }
     &__heading {
+        text-transform: uppercase;
         &--small {
-        font-size: 2.5rem;
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
         }
         &--large {
-        font-size: 4rem;
+        font-size: clamp(2rem, 4vw, 4rem);
         }
     }
     &__actions {
