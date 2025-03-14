@@ -1,13 +1,24 @@
 @font-face {
-    font-family: proxima-nova-reg;
-    src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf") format('opentype');
+  font-family: proxima-nova-reg;
+  src: url("../../assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf")
+    format("opentype");
 }
 
 $typography_proxima-nova-reg: proxima-nova-reg, arial, sans-serif;
 
-
 h1 {
-    font-family: $typography_proxima-nova-reg;
-    font-weight: 700;
+  font-family: $typography_proxima-nova-reg;
+  font-weight: 700;
+}
+.bold {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.standard-case {
+  text-transform: none;
 }
 //I would include more typography here as needed

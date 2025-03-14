@@ -1,0 +1,61 @@
+@use "../utility/colors.scss";
+@use "../utility/breakpoints.scss";
+.product-card {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  position: relative;
+  width: 300px;
+  height: 450px;
+
+  @media (min-width: breakpoints.$lg) {
+    width: 350px;
+    height: 525px;
+  }
+  border: solid 1px colors.$color_grey_03;
+  &:hover,
+  &:focus-within {
+    border: solid 1px colors.$color_black;
+    // cursor: pointer;
+  }
+
+  &__top {
+    position: relative;
+    width: 100%;
+    grid-column: 1/2;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__bottom {
+    display: grid;
+    padding: 2rem;
+    a {
+      padding: 0;
+      color: colors.$color_black;
+      &:after {
+        content: "";
+        display: block;
+        inset: 0;
+        background: transparent;
+        position: absolute;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__promo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: colors.$color_brown;
+    color: colors.$color_white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+  }
+}
