@@ -62,7 +62,7 @@
   width: 30px;
 }
 .carousel__controls .carousel__control--active {
-  border-bottom: solid 1px #000;
+  border-bottom: solid 2px #000;
 }
 
 /*# sourceMappingURL=carousel.css.map */
