@@ -1,0 +1,71 @@
+@use '../utility/breakpoints.scss';
+@use '../utility/colors.scss';
+@use '../utility/spacing.scss';
+.carousel {
+    
+    
+    overflow: hidden;
+    &__inner {
+        //hide scrollbars
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        overflow: auto;
+        width: 100%;
+        display: inline-flex;
+        position: relative;
+        gap: 0.75rem;
+        padding: 1rem;
+        height: 470px;
+        scroll-snap-type: x mandatory;
+        @media screen and (min-width: breakpoints.$md) {
+            gap: 2rem;
+            height: 540px;
+        }
+        a{
+            scroll-snap-align: center;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+    }
+    & &-card:nth-of-type(even) {
+        align-self: flex-end;
+        margin-top: auto;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: spacing.$spacing_01;
+        &--desktop {
+            @media screen and (max-width: breakpoints.$lg-1) {
+                display: none;
+            }
+        }
+        &--tablet {
+            display: none;
+            @media (min-width: breakpoints.$md-1) and (max-width: breakpoints.$lg-1)  {
+                display: flex;
+            }
+        }
+        &--mobile {
+            @media screen and (min-width: breakpoints.$md) {
+                display: none;
+            }
+        }
+
+        .carousel__control {
+            background-color: transparent;
+            border-radius: 0;
+            border-bottom: solid 1px colors.$color_grey_05;
+            width: spacing.$spacing_03;
+            &--active {
+                border-bottom: solid 1px colors.$color_black;
+            }
+        }
+    }
+}

@@ -1,20 +1,21 @@
 @use "../utility/colors.scss";
 @use "../utility/spacing.scss";
+@use "../utility/breakpoints.scss";
 .carousel-card {
+    display: block;
     border-radius: 1rem;
     background: linear-gradient(colors.$color_grey_01, colors.$color_grey_01);
     overflow: hidden;
     width: 280px;
+    min-width: 280px;
     height: 390px;
+    min-height: 390px;
     background-size: cover;
     padding: 2rem;
     color: colors.$color_black;
     text-decoration: none;
     transition: transform 0.3s, box-shadow 0.3s;
-    &:hover {
-        transform: scale(1.05);
-        box-shadow: 1px 1px 10px 1px colors.$color_grey_04;
-    }
+
     &__header{
         font-size: clamp(1.25rem, 1.5vw, 1.5rem);
         font-weight: 700;
@@ -22,10 +23,16 @@
     &__sub {
         font-size: clamp(0.75rem, 1vw, 0.875rem);
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: breakpoints.$md) {
         width: 346px;
         height: 460px;
+        min-width: 346px;
+        min-height: 460px;
         padding: 2.5rem;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 1px 1px 10px 1px colors.$color_grey_04;
+        }
     }
 
 }
