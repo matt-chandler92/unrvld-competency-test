@@ -2,9 +2,8 @@
 @use '../utility/colors.scss';
 @use '../utility/spacing.scss';
 .carousel {
-    
-    
-    overflow: hidden;
+    overflow: visible;
+    margin-bottom: spacing.$spacing_02;
     &__inner {
         //hide scrollbars
         &::-webkit-scrollbar {

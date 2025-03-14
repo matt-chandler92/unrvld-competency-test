@@ -1,5 +1,6 @@
 .carousel {
-  overflow: hidden;
+  overflow: visible;
+  margin-bottom: 20px;
 }
 .carousel__inner {
   -ms-overflow-style: none;

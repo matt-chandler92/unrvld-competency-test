@@ -20,7 +20,7 @@
 .carousel-card__sub {
   font-size: clamp(0.75rem, 1vw, 0.875rem);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .carousel-card {
     width: 346px;
     height: 460px;
