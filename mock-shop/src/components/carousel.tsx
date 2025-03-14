@@ -7,6 +7,8 @@ export interface CarouselProps {
 
 export function Carousel({cards} : CarouselProps) {
     
+    const isDesktop = window.innerWidth >= 992;
+    const isTablet = window.innerWidth >= 768 && window.innerWidth < 992;
     const [activeItem, setActiveItem] = useState(0);
     const carouselRef = useRef<HTMLDivElement>(null);
     const handleCarouselSlide = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -15,22 +17,34 @@ export function Carousel({cards} : CarouselProps) {
             carouselRef.current && carouselRef.current.children.item(target)?.scrollIntoView({behavior: "smooth", inline: "start"})
         }
     }
-    const handleCarouselScroll = () => {
+    const handleCarouselScroll = (e: React.UIEvent<HTMLDivElement>) => {
         let visibleChildFound = false;
         const carouselRightBoundary = carouselRef.current?.getBoundingClientRect().right;
         const carouselLeftBoundary = carouselRef.current?.getBoundingClientRect().left;
         const carouselCenter = (carouselRightBoundary && carouselLeftBoundary)&&(carouselRightBoundary - carouselLeftBoundary )/2
-        
+        const factor = isDesktop? 3 : isTablet? 2 : 1;
         carouselRef.current?.childNodes.forEach((child, index)=>{
-            const isActiveChild = carouselCenter && Boolean((child as HTMLElement).getBoundingClientRect().left <= carouselCenter && (child as HTMLElement).getBoundingClientRect().right >= carouselCenter);
-            if (!visibleChildFound && isActiveChild){
-                setActiveItem(index);
-                visibleChildFound = true;
+            if(isDesktop || isTablet){   
+            const isMultiple = (index)%factor == 0
+                const isActiveChild = carouselCenter && Boolean((child as HTMLElement).getBoundingClientRect().left <= carouselRightBoundary && (child as HTMLElement).getBoundingClientRect().right > carouselLeftBoundary);
+                
+                isMultiple && console.log(child, isActiveChild)
+                if (!visibleChildFound && isActiveChild && isMultiple){
+                    setActiveItem(index);
+                    console.log(activeItem)
+                    visibleChildFound = true;
+                }
             }
+            else{
+                const isActiveChild = carouselCenter && Boolean((child as HTMLElement).getBoundingClientRect().left <= carouselCenter && (child as HTMLElement).getBoundingClientRect().right >= carouselCenter);
+                if (!visibleChildFound && isActiveChild){
+                    setActiveItem(index);
+                    visibleChildFound = true;
+                }
+            }
+            
         })
     }
-
-    //TODO - add click/drag for Desktop
 
     return(
         <div className="container">
