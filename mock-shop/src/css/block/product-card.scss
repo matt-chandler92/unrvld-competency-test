@@ -5,13 +5,13 @@
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr;
   position: relative;
-  width: 300px;
-  height: 450px;
+  //   min-width: 300px;
+  //   min-height: 450px;
 
-  @media (min-width: breakpoints.$lg) {
-    width: 350px;
-    height: 525px;
-  }
+  //   @media (min-width: breakpoints.$lg) {
+  //     min-width: 350px;
+  //     min-height: 525px;
+  //   }
   border: solid 1px colors.$color_grey_03;
   &:hover,
   &:focus-within {
