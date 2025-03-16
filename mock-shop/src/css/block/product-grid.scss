@@ -1,0 +1,8 @@
+@use "../utility/breakpoints.scss";
+
+.product-grid {
+  display: grid;
+  @media (min-width: breakpoints.$md) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

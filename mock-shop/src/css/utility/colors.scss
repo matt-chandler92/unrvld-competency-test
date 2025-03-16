@@ -1,0 +1,15 @@
+$color_black: #000;
+$color_white: #fff;
+$color_grey_01: #efefef;
+$color_grey_02: #ececec;
+$color_grey_03: #ebebeb;
+$color_grey_04: #ccc;
+$color_grey_05: #999;
+$color_grey_06: #767676;
+$color_brown: #8a7147;
+
+// If time permited, I would map the variables above to more contextual variables such as typography_primary, typography_secondary etc..
+
+.grey-06 {
+  color: $color_grey_06;
+}

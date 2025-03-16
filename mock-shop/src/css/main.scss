@@ -1,0 +1,19 @@
+//composition
+@use "./composition/reset.scss";
+@use "../../node_modules/bootstrap/scss/bootstrap.scss"; //using bootstrap for sake of speed
+
+//utilites & variables
+@use "./utility/colors.scss";
+@use "./utility/spacing.scss";
+@use "./utility/typography.scss";
+
+//blocks
+@use "./block/button.scss";
+@use "./block/header.scss";
+@use "./block/filters.scss";
+@use "./block/carousel-card.scss";
+@use "./block/carousel.scss";
+@use "./block/product-card.scss";
+@use "./block/product-grid.scss";
+
+//exceptions
