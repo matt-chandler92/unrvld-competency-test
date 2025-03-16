@@ -1,0 +1,106 @@
+{
+    "collection": {
+        "id": "gid://shopify/Collection/429512622102",
+        "handle": "featured",
+        "title": "Featured",
+        "description": "Discover the pinnacle of Liquid's athletic wear in our Featured collection. These pieces encapsulate our commitment to sustainable fashion, merging comfort, style, and eco-consciousness.",
+        "image": {
+            "id": "gid://shopify/CollectionImage/1609449046038",
+            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/collections/banner-2.png?v=1675462488"
+        },
+        "products": {
+            "edges": [
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7982905098262",
+                        "title": "Men's Crewneck",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774600855574",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenMenscrew01.jpg?v=1675454919"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7982904639510",
+                        "title": "Hoodie",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774600036374",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenHoodie01.jpg?v=1739549220"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983591030806",
+                        "title": "Women's Crewneck",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774601543702",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenWomenscrew01.jpg?v=1675453375"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983595290646",
+                        "title": "Black Sunnies",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774608719894",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/Blacksunnies.jpg?v=1675447388"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983595487254",
+                        "title": "High Top Sneakers",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774608883734",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/Whiteleathersneakers01.jpg?v=1675447604"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983595323414",
+                        "title": "White Leather Sneakers",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774608752662",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/Differentwhiteleathersneakers01.jpg?v=1675447428"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983593095190",
+                        "title": "Canvas Sneakers",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774604165142",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenCanvasSneaker01.jpg?v=1675454881"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983595356182",
+                        "title": "Gray Leather Sneakers",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774608785430",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/Greyleathersneakers.jpg?v=1675447462"
+                        }
+                    }
+                },
+                {
+                    "node": {
+                        "id": "gid://shopify/Product/7983592374294",
+                        "title": "Women's T-shirt",
+                        "featuredImage": {
+                            "id": "gid://shopify/ProductImage/39774603477014",
+                            "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenWomensTshirt01.jpg?v=1675463247"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
