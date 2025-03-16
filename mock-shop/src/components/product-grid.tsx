@@ -1,15 +1,17 @@
 import { ProductCard, ProductCardProps } from "./product-card";
 
 export interface ProductGridProps {
-  products: ProductCardProps[];
+  products?: ProductCardProps[];
 }
 
 export function ProductGrid({ products }: ProductGridProps) {
   return (
-    <div className="product-grid">
-      {products.map((product, index) => (
-        <ProductCard key={index} {...product} />
+    <ul className="product-grid">
+      {products?.map((product, index) => (
+        <li>
+          <ProductCard key={index} {...product} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

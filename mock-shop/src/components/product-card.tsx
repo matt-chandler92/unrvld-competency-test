@@ -3,8 +3,8 @@ export interface ProductCardProps {
   name: string;
   description?: string;
   variant?: string;
-  price: string;
-  promo: boolean;
+  price?: string;
+  promo?: boolean;
   image: string;
 }
 
@@ -14,7 +14,7 @@ export function ProductCard({
   description,
   variant,
   price,
-  promo,
+  promo = false,
   image,
 }: ProductCardProps) {
   return (

@@ -6,7 +6,7 @@ export interface option {
 
 export interface FilterProps {
   options: option[];
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 }
 export function Filters({ options, onChange }: FilterProps) {
   const [selected, setSelected] = useState("");
@@ -27,7 +27,7 @@ export function Filters({ options, onChange }: FilterProps) {
             checked={selected === option.value}
             onChange={() => {
               setSelected(option.value);
-              onChange(option.value);
+              onChange && onChange(option.value);
             }}
             id={`filter-${index}`}
           />
