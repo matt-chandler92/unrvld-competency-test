@@ -10,17 +10,21 @@ export function Carousel({ cards }: CarouselProps) {
   const isTablet = window.innerWidth >= 768 && window.innerWidth < 992;
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
+
   const handleCarouselSlide = (e: React.MouseEvent<HTMLButtonElement>) => {
     const target = Number((e.target as HTMLButtonElement).dataset.index);
     if (typeof target == "number") {
       carouselRef.current &&
         carouselRef.current.children
           .item(target)
-          ?.scrollIntoView({ behavior: "smooth", inline: "start" });
+          ?.scrollIntoView({ behavior: "smooth", inline: "start" }); //triggers handleCarouselScoll to update the navigation
     }
   };
+
   const handleCarouselScroll = (e: React.UIEvent<HTMLDivElement>) => {
     let visibleChildFound = false;
+
+    // get bounding box of the carousel and calculate the center of it for mobile
     const carouselRightBoundary =
       carouselRef.current?.getBoundingClientRect().right;
     const carouselLeftBoundary =
@@ -29,10 +33,14 @@ export function Carousel({ cards }: CarouselProps) {
       carouselRightBoundary &&
       carouselLeftBoundary &&
       (carouselRightBoundary - carouselLeftBoundary) / 2;
+
     const factor = isDesktop ? 3 : isTablet ? 2 : 1;
+
     carouselRef.current?.childNodes.forEach((child, index) => {
+      // if desktop or tablet then check that the card is a multiple of the number of cards shown on screen
       if (isDesktop || isTablet) {
         const isMultiple = index % factor == 0;
+        //check for carousel center and by proxy check for right and left boundary then return true if the card is within the right and left boundary
         const isActiveChild =
           carouselCenter &&
           Boolean(
@@ -41,14 +49,13 @@ export function Carousel({ cards }: CarouselProps) {
               (child as HTMLElement).getBoundingClientRect().right >
                 carouselLeftBoundary
           );
-
-        isMultiple && console.log(child, isActiveChild);
+        //update the navigation
         if (!visibleChildFound && isActiveChild && isMultiple) {
           setActiveItem(index);
-          console.log(activeItem);
           visibleChildFound = true;
         }
       } else {
+        //if mobile check if the card straddles the center of the carousel
         const isActiveChild =
           carouselCenter &&
           Boolean(
@@ -57,6 +64,8 @@ export function Carousel({ cards }: CarouselProps) {
               (child as HTMLElement).getBoundingClientRect().right >=
                 carouselCenter
           );
+
+        //update the navigation
         if (!visibleChildFound && isActiveChild) {
           setActiveItem(index);
           visibleChildFound = true;

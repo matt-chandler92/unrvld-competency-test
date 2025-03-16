@@ -2,7 +2,9 @@
 then use that to filter the results.
 
 I would also have implemented the filters as checkboxes instead of radios so that multiple or none of the filters could be selected or a clear feature.
-Ultimately something to be discussed with the UX consultant*/
+Ultimately something to be discussed with the UX consultant
+
+Finally I would have added a loader in for the grid so that it's clear to the user that they should be waiting for something to load, to reduce the perceived performance*/
 
 import { useState, useEffect, useRef } from "react";
 import { Header } from "../components/header";
